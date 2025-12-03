@@ -1,11 +1,11 @@
 GCC = gcc
 LFLAGS = 
-CFLAGS = 
+CFLAGS = -std=c99
 
 EXEC = a.out
 SOURCE = main.c
 
-vfs: 
+vfs: $(SOURCE)
 	$(GCC) $(SOURCE) $(CFLAGS) $(LFAGS)
 
 run:
